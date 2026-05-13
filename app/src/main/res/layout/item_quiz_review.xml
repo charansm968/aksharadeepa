@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginBottom="9dp"
+    app:cardCornerRadius="12dp" app:cardElevation="2dp"
+    app:cardBackgroundColor="@color/white">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="13dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical">
+            <TextView android:id="@+id/tvQNum"
+                android:layout_width="28dp" android:layout_height="28dp"
+                android:gravity="center" android:textSize="12sp"
+                android:fontFamily="sans-serif-bold" android:textColor="@color/white"
+                android:background="@drawable/bg_number_badge"/>
+            <TextView android:id="@+id/tvResultIcon"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textSize="18sp" android:layout_marginStart="8dp"/>
+            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+            <TextView android:id="@+id/tvResultLabel"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textSize="12sp" android:fontFamily="sans-serif-medium"/>
+        </LinearLayout>
+        <TextView android:id="@+id/tvReviewQuestion"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textSize="13sp" android:textColor="@color/text_primary"
+            android:lineSpacingMultiplier="1.3" android:layout_marginTop="7dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginTop="6dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Your answer: " android:textSize="12sp" android:textColor="@color/text_secondary"/>
+            <TextView android:id="@+id/tvYourAnswer"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textSize="12sp" android:fontFamily="sans-serif-medium"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginTop="2dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Correct answer: " android:textSize="12sp" android:textColor="@color/text_secondary"/>
+            <TextView android:id="@+id/tvCorrectAns"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textSize="12sp" android:fontFamily="sans-serif-medium" android:textColor="@color/success"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

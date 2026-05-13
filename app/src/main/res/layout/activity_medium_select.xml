@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_primary"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif-bold"
+        android:text="@string/app_name"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="SSLC 10th Grade Self-Study Companion"
+        android:textColor="#FFEECC"
+        android:textSize="13sp"/>
+
+    <View android:layout_width="50dp" android:layout_height="2dp"
+        android:background="#80FFFFFF"
+        android:layout_marginTop="20dp" android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Your Medium of Instruction"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="6dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="&#3215;&#3215;&#3250;&#3233; &#3202;&#3277;&#3240;&#3265;&#3215; &#3215;&#3261;&#3228;&#3265;&#3240;&#3246; &#3226;&#3277;&#3228;&#3246;&#3224;&#3265;"
+        android:textColor="#FFDDAA"
+        android:textSize="13sp"
+        android:layout_marginBottom="28dp"/>
+
+    <!-- English Medium Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvEnglish"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        app:cardCornerRadius="18dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:gravity="center"
+                android:text="A"
+                android:textSize="28sp"
+                android:fontFamily="sans-serif-bold"
+                android:textColor="#1565C0"
+                android:background="@color/info_light"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="English Medium"
+                    android:textSize="17sp"
+                    android:fontFamily="sans-serif-bold"
+                    android:textColor="@color/text_primary"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All subjects taught in English"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_secondary"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&#10132;"
+                android:textSize="20sp"
+                android:textColor="@color/primary"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Kannada Medium Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvKannada"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="18dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:gravity="center"
+                android:text="&#3221;"
+                android:textSize="28sp"
+                android:fontFamily="sans-serif-bold"
+                android:textColor="@color/kannada_color"
+                android:background="@color/kannada_light"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kannada Medium"
+                    android:textSize="17sp"
+                    android:fontFamily="sans-serif-bold"
+                    android:textColor="@color/text_primary"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="&#3221;&#3240;&#3277;&#3240;&#3233; &#3202;&#3277;&#3240;&#3265;&#3215;&#3233;&#3277;&#3234;&#3265; &#3232;&#3213;&#3277;&#3232;&#3246;&#3224;"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_secondary"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&#10132;"
+                android:textSize="20sp"
+                android:textColor="@color/primary"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="100% Offline  |  Karnataka SSLC"
+        android:textColor="#AAFFFFFF"
+        android:textSize="12sp"/>
+
+</LinearLayout>

@@ -1,0 +1,4 @@
+-keep class com.akshara.deepa.data.models.** { *; }
+-keep class com.akshara.deepa.data.db.** { *; }
+-keepattributes *Annotation*
+-dontwarn com.github.mikephil.**

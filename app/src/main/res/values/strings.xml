@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Akshara Deepa</string>
+    <string name="daily_heading">Daily Goal</string>
+    <string name="daily_sub">Read at least one chapter every day</string>
+    <string name="streak_days_label">Day Streak!</string>
+    <string name="today_activity">Today Activity</string>
+    <string name="this_week">This Week</string>
+    <string name="goal_pending">Complete one chapter to reach your goal!</string>
+    <string name="motivation_label">Today\'s Motivation</string>
+    <string name="today_chapters_label">Chapters</string>
+    <string name="today_quizzes_label">Quizzes</string>
+    <string name="goal_progress_label">Daily Goal Progress</string>
+    <string name="book_emoji">&#128218;</string>
+    <string name="pencil_emoji">&#9997;</string>
+    <string name="fire_emoji">&#128293;</string>
+    <string name="offline_badge">Offline &#10003;</string>
+</resources>

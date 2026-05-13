@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand -->
+    <color name="primary">#D84315</color>
+    <color name="primary_dark">#BF360C</color>
+    <color name="primary_light">#FFCCBC</color>
+    <color name="secondary">#F57F17</color>
+    <color name="secondary_dark">#E65100</color>
+
+    <!-- Subject colours -->
+    <color name="science_color">#1565C0</color>
+    <color name="science_light">#BBDEFB</color>
+    <color name="math_color">#6A1B9A</color>
+    <color name="math_light">#E1BEE7</color>
+    <color name="social_color">#B71C1C</color>
+    <color name="social_light">#FFCDD2</color>
+    <color name="kannada_color">#1B5E20</color>
+    <color name="kannada_light">#C8E6C9</color>
+    <color name="english_color">#E65100</color>
+    <color name="english_light">#FFE0B2</color>
+
+    <!-- Backgrounds — white/very-light only -->
+    <color name="background">#F5F5F5</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="card_background">#FFFFFF</color>
+
+    <!-- Text — always dark on light bg, always white on dark bg -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#424242</color>
+    <color name="text_hint">#757575</color>
+    <color name="text_on_primary">#FFFFFF</color>
+    <color name="text_on_dark">#FFFFFF</color>
+
+    <!-- Status -->
+    <color name="success">#2E7D32</color>
+    <color name="success_light">#E8F5E9</color>
+    <color name="warning">#F57F17</color>
+    <color name="warning_light">#FFF8E1</color>
+    <color name="error">#C62828</color>
+    <color name="error_light">#FFEBEE</color>
+    <color name="info">#0277BD</color>
+    <color name="info_light">#E1F5FE</color>
+
+    <!-- Progress -->
+    <color name="progress_track">#BDBDBD</color>
+    <color name="progress_fill">#D84315</color>
+
+    <!-- Misc -->
+    <color name="divider">#E0E0E0</color>
+    <color name="ripple">#20D84315</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="accent">#2E7D32</color>
+</resources>

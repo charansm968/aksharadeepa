@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment android:id="@+id/homeFragment"
+        android:name="com.akshara.deepa.ui.home.HomeFragment"
+        android:label="Home" />
+
+    <fragment android:id="@+id/strengthMapFragment"
+        android:name="com.akshara.deepa.ui.strengthmap.StrengthMapFragment"
+        android:label="Strength Map" />
+
+    <fragment android:id="@+id/dailyGoalFragment"
+        android:name="com.akshara.deepa.ui.daily.DailyGoalFragment"
+        android:label="Daily Goal" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.akshara.deepa.ui.settings.SettingsFragment"
+        android:label="Settings" />
+
+</navigation>

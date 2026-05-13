@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header - Issue #9: proper heading -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:background="@drawable/bg_gradient_primary"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="My Strength Map"
+                android:textColor="#FFFFFF" android:textSize="24sp"
+                android:fontFamily="sans-serif-bold"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Track your subject mastery and identify weak areas"
+                android:textColor="#FFEECC" android:textSize="13sp"/>
+        </LinearLayout>
+
+        <!-- Radar Chart -->
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_margin="14dp"
+            app:cardCornerRadius="16dp" app:cardElevation="4dp"
+            app:cardBackgroundColor="@color/white">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="16dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Subject Mastery Spider Chart"
+                    android:textSize="14sp" android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/text_primary" android:layout_marginBottom="8dp"/>
+                <com.github.mikephil.charting.charts.RadarChart android:id="@+id/radarChart"
+                    android:layout_width="match_parent" android:layout_height="280dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Progress heading -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Progress by Subject"
+            android:textSize="16sp" android:fontFamily="sans-serif-medium"
+            android:textColor="@color/text_primary"
+            android:layout_marginStart="14dp" android:layout_marginBottom="8dp"/>
+
+        <!-- Science -->
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp" android:layout_marginEnd="14dp"
+            android:layout_marginBottom="8dp"
+            app:cardCornerRadius="14dp" app:cardElevation="3dp"
+            app:cardBackgroundColor="@color/white">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="14dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center_vertical">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="Science"
+                        android:textSize="14sp" android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/text_primary"/>
+                    <TextView android:id="@+id/tvScienceScore" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="0%"
+                        android:textSize="15sp" android:fontFamily="sans-serif-bold"
+                        android:textColor="@color/science_color"/>
+                </LinearLayout>
+                <ProgressBar android:id="@+id/pbScience"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent" android:layout_height="10dp"
+                    android:layout_marginTop="8dp"
+                    android:progressTint="@color/science_color"
+                    android:progressBackgroundTint="@color/science_light"
+                    android:max="100" android:progress="0"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Maths -->
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp" android:layout_marginEnd="14dp"
+            android:layout_marginBottom="8dp"
+            app:cardCornerRadius="14dp" app:cardElevation="3dp"
+            app:cardBackgroundColor="@color/white">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="14dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center_vertical">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="Mathematics"
+                        android:textSize="14sp" android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/text_primary"/>
+                    <TextView android:id="@+id/tvMathScore" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="0%"
+                        android:textSize="15sp" android:fontFamily="sans-serif-bold"
+                        android:textColor="@color/math_color"/>
+                </LinearLayout>
+                <ProgressBar android:id="@+id/pbMath"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent" android:layout_height="10dp"
+                    android:layout_marginTop="8dp"
+                    android:progressTint="@color/math_color"
+                    android:progressBackgroundTint="@color/math_light"
+                    android:max="100" android:progress="0"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Social -->
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp" android:layout_marginEnd="14dp"
+            android:layout_marginBottom="8dp"
+            app:cardCornerRadius="14dp" app:cardElevation="3dp"
+            app:cardBackgroundColor="@color/white">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="14dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center_vertical">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="Social Science"
+                        android:textSize="14sp" android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/text_primary"/>
+                    <TextView android:id="@+id/tvSocialScore" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="0%"
+                        android:textSize="15sp" android:fontFamily="sans-serif-bold"
+                        android:textColor="@color/social_color"/>
+                </LinearLayout>
+                <ProgressBar android:id="@+id/pbSocial"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent" android:layout_height="10dp"
+                    android:layout_marginTop="8dp"
+                    android:progressTint="@color/social_color"
+                    android:progressBackgroundTint="@color/social_light"
+                    android:max="100" android:progress="0"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Kannada -->
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp" android:layout_marginEnd="14dp"
+            android:layout_marginBottom="8dp"
+            app:cardCornerRadius="14dp" app:cardElevation="3dp"
+            app:cardBackgroundColor="@color/white">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="14dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center_vertical">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="Kannada"
+                        android:textSize="14sp" android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/text_primary"/>
+                    <TextView android:id="@+id/tvKannadaScore" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="0%"
+                        android:textSize="15sp" android:fontFamily="sans-serif-bold"
+                        android:textColor="@color/kannada_color"/>
+                </LinearLayout>
+                <ProgressBar android:id="@+id/pbKannada"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent" android:layout_height="10dp"
+                    android:layout_marginTop="8dp"
+                    android:progressTint="@color/kannada_color"
+                    android:progressBackgroundTint="@color/kannada_light"
+                    android:max="100" android:progress="0"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- English -->
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp" android:layout_marginEnd="14dp"
+            android:layout_marginBottom="8dp"
+            app:cardCornerRadius="14dp" app:cardElevation="3dp"
+            app:cardBackgroundColor="@color/white">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="14dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center_vertical">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="English"
+                        android:textSize="14sp" android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/text_primary"/>
+                    <TextView android:id="@+id/tvEnglishScore" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="0%"
+                        android:textSize="15sp" android:fontFamily="sans-serif-bold"
+                        android:textColor="@color/english_color"/>
+                </LinearLayout>
+                <ProgressBar android:id="@+id/pbEnglish"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent" android:layout_height="10dp"
+                    android:layout_marginTop="8dp"
+                    android:progressTint="@color/english_color"
+                    android:progressBackgroundTint="@color/english_light"
+                    android:max="100" android:progress="0"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Gap Analysis card -->
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="14dp"
+            app:cardCornerRadius="16dp" app:cardElevation="4dp"
+            app:cardBackgroundColor="@color/white">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="16dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp" android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/error" android:layout_marginBottom="10dp"/>
+                <TextView android:id="@+id/tvGapAreas"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="Take quizzes and read chapters to see your weak areas"
+                    android:textSize="13sp" android:textColor="@color/text_secondary"
+                    android:lineSpacingMultiplier="1.5"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>
